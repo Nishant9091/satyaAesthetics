@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "theseasons";
+  src: url("assets/fonts/Fontspring-DEMO-theseasons-reg.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "theseasons", sans-serif;
 }
 
 header {
@@ -14,7 +23,7 @@ header .container-fluid {
 .head-li li {
   margin: 0 20px;
   font-size: 15px;
-  color: #a0783b;
+  color: #B77716;
   font-weight: 500;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -24,12 +33,12 @@ header .container-fluid {
   font-size: 100px;
   font-weight: lighter;
   text-transform: uppercase;
-  font-family: auto;
+  font-family: "theseasons", sans-serif;
   color: #a0783b;
 }
 
 .main-cont {
-  background: url(assets/imgs/BANNER\ WITH\ NEW\ COLOR\ 2.svg);
+  background: url(assets/imgs/BANNER\ WITH\ NEW\ COLOR\ 2\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -38,10 +47,16 @@ header .container-fluid {
   background-color: #885200;
 }
 
-.services h2 {
+.services .sepration {
   color: #ffdca6;
+  font-family: "theseasons", sans-serif;
+  font-size: 64px !important;
+  letter-spacing: 28px;
 }
-
+.services h2{
+  color: #ffdca6;
+  font-family: "theseasons", sans-serif;
+}
 .head img {
   height: fit-content;
 }
@@ -64,11 +79,11 @@ header .container-fluid {
 .services .card h3 {
   color: #ffdca6;
   font-size: 48px;
-  font-family: auto;
+  font-family: "theseasons", sans-serif;
 }
 .services .card p {
   font-size: 24px;
-  color: #be975c;
+  color: #FFF1DB;
 }
 
 .founder {
@@ -78,45 +93,49 @@ header .container-fluid {
 .founder h2 {
   font-size: 60px;
   color: #bb8739;
-  font-family: auto;
+  font-family: "theseasons", sans-serif;
 }
 
-.founder .drs{
+.founder .drs {
   height: 810px;
   width: 700px;
   object-fit: cover;
 }
 
-.in-card h3{
-  font-family: auto;
-  color: #6F4300;
+.in-card h3 {
+  font-family: "theseasons", sans-serif;
+  color: #6f4300;
 }
-.in-card h4{
+.in-card h4 {
   color: #bb8739;
   text-transform: uppercase;
+  font-weight: 400!important;
 }
 .results,
 .findus-yt,
-.visit{
+.visit {
   background-color: #fff7f1;
 }
-.results h2{
+.results h2 {
   color: #bb8739;
-  font-family: auto;
+  font-family: "theseasons", sans-serif;
 }
 .findus-ig h2,
-.findus-yt h2{
+.findus-yt h2 {
   color: #885200;
-  font-family: auto;
+  font-family: "theseasons", sans-serif;
   text-align: center;
 }
-.visit-h{
+.findus-yt h3{
+  font-family: "theseasons", sans-serif;
+}
+.visit-h {
   color: #be975c;
-  font-family: auto;
+  font-family: "theseasons", sans-serif;
   font-size: 45px;
 }
 
-footer ul li{
+footer ul li {
   color: #be975c;
   list-style: none;
   font-size: 20px;
@@ -124,16 +143,16 @@ footer ul li{
 }
 
 @media (max-width: 1250px) {
-  .main-cont h1 img{
+  .main-cont h1 img {
     width: 100%;
   }
-  .form img{
+  .form img {
     width: 100%;
   }
-  .int{
+  .int {
     width: 100%;
   }
-  .founder .drs{
+  .founder .drs {
     width: 100%;
-  }  
+  }
 }
