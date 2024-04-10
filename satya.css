@@ -16,6 +16,7 @@ body {
 header {
   background-color: #fff7f1;
 }
+
 header .container-fluid {
   width: 90%;
 }
@@ -68,7 +69,7 @@ header .container-fluid {
 }
 
 .services .card {
-  height: 80vh;
+  height: 500px;
   background-color: inherit;
   border: 1px solid #be975c;
   display: flex;
@@ -113,7 +114,8 @@ header .container-fluid {
 }
 .results,
 .findus-yt,
-.visit {
+.visit,
+.Blogs {
   background-color: #fff7f1;
 }
 .results h2 {
@@ -121,7 +123,8 @@ header .container-fluid {
   font-family: "theseasons", sans-serif;
 }
 .findus-ig h2,
-.findus-yt h2 {
+.findus-yt h2,
+.Blogs h2 {
   color: #885200;
   font-family: "theseasons", sans-serif;
   text-align: center;
@@ -140,6 +143,48 @@ footer ul li {
   list-style: none;
   font-size: 20px;
   margin: 10px 0;
+}
+
+.B-inC{
+  background-color: #BB8739;
+  color: white;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+  top: -6rem;
+}
+
+.B-inC h4{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.B-inC p{
+  font-size: 10px;
+}
+.Medical {
+  background-color: #FFEED4;
+}
+.med-txt{
+  color: #885200;
+  font-size: 18px;
+  font-weight: 600;
+}
+.medical-img{
+  background-color: #885200;
+  height: 100vh;
+}
+.medical-img h2{
+  font-family: "theseasons", sans-serif;
+  color: #FFF7F1;
+  font-size: 45px;
+}
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev{
+  color: #FFEED4
+}
+.medical-img img{
+  padding: .5rem;
+  border: 1px solid #B77716;
 }
 
 @media (max-width: 1250px) {
