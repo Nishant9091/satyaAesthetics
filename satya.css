@@ -195,9 +195,41 @@ button img:hover {
   transform: rotate(-40deg);
   transition: 0.2s ease-in-out;
 }
-.B-inC:hover{
+.B-inC:hover {
   background-color: #6f4300;
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/* Styling the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: start;
+  color: #b77716;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #6f4300;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 @media (max-width: 1250px) {

@@ -63,6 +63,21 @@
         .r-card h4 {
             color: #BE975C;
         }
+
+        .fixed-image {
+            position: sticky;
+            top: 0;
+            height: 180vh;
+            /* Adjust height as needed */
+            overflow: hidden;
+            /* Hide overflow to prevent scroll bars */
+        }
+        @media (max-width: 1250px) {
+            .fixed-image{
+                position: static;
+                height: auto;
+            }
+        }
     </style>
 </head>
 
@@ -90,12 +105,12 @@
     </header>
 
     <section>
-        <img src="assets/imgs/about banner.png" alt="">
+        <img src="assets/imgs/about banner.png" class="w-100" alt="">
     </section>
 
     <section class="drs">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 fixed-image">
                 <img src="assets/imgs/dr-old.png" class="w-100" alt="">
                 <div class="in-card p-2 p-md-5" style="background-color: #885200;">
                     <h3 class="fs-1 my-3" style="color: #FFDCA6;">DR. SHAIIL GUPTA</h3>
@@ -150,7 +165,7 @@
                 </div>
             </div>
         </div>
-        <div class="row bg-white">
+        <div class="row flex-column-reverse flex-md-row bg-white">
             <div class="col-md-6 p-5">
                 <div class="mt-5 ps-5" style="border-left: 2px solid #BB8739;">
                     <h4>POST GRAD</h4>
@@ -176,10 +191,10 @@
 
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="assets/imgs/DSC6087.jpg" class="w-100" alt="">
+            <div class="col-md-6 fixed-image">
+                <img src="assets/imgs/DSC6087.jpg" class="w-100 h-75" style="object-fit: cover;" alt="">
                 <div class="in-card p-2 p-md-5" style="background-color: #FFF7F1;">
-                    <h3 class="fs-1 my-3" style="color: #;">DR. RUCHI AGARWAL</h3>
+                    <h3 class="fs-1 my-3">DR. RUCHI AGARWAL</h3>
                     <h4 style="color: #885200;">MD, Dermatologist, <br>
                         Hair Transplant Surgeon</h4>
                     <i class="fa-brands fa-instagram fs-2 me-3 my-2" style="color: #885200;"></i>
@@ -190,9 +205,11 @@
     </section>
 
     <section class="FDA mb-5" style="border: 1px solid #BE975C;">
-        <div class="container py-5 d-flex justify-content-center align-items-center gap-5">
-            <img src="assets/imgs/FDA.png" alt="">
-            <h2>US FDA APPROVED</h2>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-5 d-flex justify-content-end justify-content-md-center align-items-center"><img src="assets/imgs/FDA.png" alt=""></div>
+                <div class="col-md-7 d-flex justify-content-start align-items-center"><h2 class="text-center">US FDA APPROVED</h2></div>
+            </div>
         </div>
     </section>
 
@@ -245,7 +262,7 @@
                 <div class="col-md-4">
                     <div class="r-card m-3 py-5 d-flex justify-content-center align-items-center flex-column">
                         <img src="assets/imgs/icons/reason/service.png" alt="">
-                        <h4 class="text-center">Comprehensive <br> Health  Services</h4>
+                        <h4 class="text-center">Comprehensive <br> Health Services</h4>
                     </div>
                 </div>
                 <div class="col-md-4">

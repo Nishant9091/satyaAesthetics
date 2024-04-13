@@ -18,47 +18,26 @@
         integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
-        .visit .container,
-        .consult .container {
-            background-color: #FFEBCD;
+        body {
+            background: linear-gradient(to bottom, #FFF7F1, #FFE6BE, #F9D59D);
         }
 
-        .consult .container {
+        .blog h1 {
+            font-size: 80px;
+            font-family: "theseasons", sans-serif;
+            color: #B77716;
+        }
+
+        .blog .container {
             border-radius: 50px 50px 0 0;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            background: linear-gradient(to bottom, #FFEBCD, #FFF7F1, #FFFFFF);
         }
-
-        .visit .container {
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        }
-
-        .visit {
-            border-top: 2px solid #B77716;
-        }
-
-        .book-h {
-            color: #B77716;
-            font-family: "theseasons", sans-serif;
-            text-align: center;
-            font-size: 60px;
-        }
-
-        .book-p {
-            color: #6F4300;
-            font-weight: 500;
-        }
-
-        body {
-            background-color: #FFF7F1;
-        }
-
-        @media (max-width: 1250px) {
-            .book-h {
-                font-size: 30px;
-            }
+        
+        a{
+            text-decoration: none;
         }
     </style>
-
 </head>
 
 <body style="overflow-x: hidden;">
@@ -84,59 +63,82 @@
         </div>
     </header>
 
-    <section class="consult">
-        <div class="container">
-            <div class="row pt-5 mt-5">
-                <div class="col-md-6 justify-content-center align-items-center d-flex flex-column">
-                    <h1 class="book-h">BOOK A VIDEO CONSULTATION</h1>
-                    <div class="text-start my-3 mx-5 w-50" style="height: 2px; background-color: #B77716;"></div>
-                    <p class="book-p mx-5">At Satya Hair Solutions, founded by Dr. Shaiil Gupta and Dr. Ruchi Agarwal,
-                        the emphasis is on
-                        the importance of consultation and planning which provides personalized and effective treatment
-                        options according to patient need.</p>
-                </div>
-                <div class="col-md-6 p-5">
-                    <img src="assets/imgs/Group 165.png" class="w-100" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="visit">
-        <div class="container py-5 px-5">
-            <div class="row px-md-5">
-                <div class="col-md-4 py-0 py-md-5 mt-5">
-                    <h2 class="visit-h mt-md-5 pt-md-5">VISIT US AT <br> OUR CLINICS</h2>
-                    <div class="text-start my-3" style="height: 2px; background-color: #BE975C;"></div>
-                    <div class="d-flex justify-content-start align-items-start">
-                        <div class="my-3 mx-2">
-                            <img src="assets/imgs/icons/locaton.png" alt="" class="mx-2">
-                        </div>
-                        <div>
-                            <h4 style="color: #BE975C; font-weight: 400;
-                             letter-spacing: 6px;" class="my-3">GURUGRAM</h4>
-                            <p style="color: #BE975C;" class="fs-5">4301, DLF -4, <br> Galleria Boulevard, <br>
-                                Gurugram - 122002 <br> Ph.: +91 9717686464</p>
-                        </div>
+    <section class="blog">
+        <div class="container mt-5 p-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center mt-5"> BLOG</h1>
+                    <div class="d-flex justify-content-center align-items-center mb-5">
+                        <div class="w-25" style="height: 2px; background-color: #B77716;"></div>
                     </div>
-                    <div class="d-flex justify-content-start align-items-start">
-                        <div class="my-3 mx-2">
-                            <img src="assets/imgs/icons/locaton.png" alt="" class="mx-2">
+                </div>
+                <div class="col-md-4">
+                    <a href="blog-in.html">
+                        <div class="B-card d-flex justify-content-center align-items-center flex-column">
+                            <img src="assets/imgs/blogs/skin1.png" class="w-100" alt="">
+                            <div class="B-inC px-3 pt-2 pb-1">
+                                <h4>Seven ways in which Dermal <br> fillers can help you</h4>
+                                <p>In the ever-evolving world of cosmetic enhancements, dermal fillers have emerged as a
+                                    beacon of hope for individuals seeking to revitalize their appearance without the
+                                    need....</p>
+                            </div>
                         </div>
-                        <div>
-                            <h4 style="color: #BE975C; font-weight: 400;
-                             letter-spacing: 6px;" class="my-3">DELHI</h4>
-                            <p style="color: #BE975C;" class="fs-5">ED 59A, Pitampura, <br> New Delhi - 110034 <br>
-                                Ph.: +91 7011752422</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="B-card d-flex justify-content-center align-items-center flex-column">
+                        <img src="assets/imgs/blogs/skin1.png" class="w-100" alt="">
+                        <div class="B-inC px-3 pt-2 pb-1">
+                            <h4>Seven ways in which Dermal <br> fillers can help you</h4>
+                            <p>In the ever-evolving world of cosmetic enhancements, dermal fillers have emerged as a
+                                beacon of hope for individuals seeking to revitalize their appearance without the
+                                need....</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-none d-md-block">
-                    <img src="assets/imgs/interior1.png" class="w-100" alt="">
-                    <img src="assets/imgs/image 3.png" class="mt-5 w-100" alt="">
+                <div class="col-md-4">
+                    <div class="B-card d-flex justify-content-center align-items-center flex-column">
+                        <img src="assets/imgs/blogs/skin1.png" class="w-100" alt="">
+                        <div class="B-inC px-3 pt-2 pb-1">
+                            <h4>Seven ways in which Dermal <br> fillers can help you</h4>
+                            <p>In the ever-evolving world of cosmetic enhancements, dermal fillers have emerged as a
+                                beacon of hope for individuals seeking to revitalize their appearance without the
+                                need....</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 d-none d-md-block">
-                    <img src="assets/imgs/interior2.png" class="int w-100 h-100" style="object-fit: contain;" alt="">
+                <div class="col-md-4">
+                    <div class="B-card d-flex justify-content-center align-items-center flex-column">
+                        <img src="assets/imgs/blogs/skin1.png" class="w-100" alt="">
+                        <div class="B-inC px-3 pt-2 pb-1">
+                            <h4>Seven ways in which Dermal <br> fillers can help you</h4>
+                            <p>In the ever-evolving world of cosmetic enhancements, dermal fillers have emerged as a
+                                beacon of hope for individuals seeking to revitalize their appearance without the
+                                need....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="B-card d-flex justify-content-center align-items-center flex-column">
+                        <img src="assets/imgs/blogs/skin1.png" class="w-100" alt="">
+                        <div class="B-inC px-3 pt-2 pb-1">
+                            <h4>Seven ways in which Dermal <br> fillers can help you</h4>
+                            <p>In the ever-evolving world of cosmetic enhancements, dermal fillers have emerged as a
+                                beacon of hope for individuals seeking to revitalize their appearance without the
+                                need....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="B-card d-flex justify-content-center align-items-center flex-column">
+                        <img src="assets/imgs/blogs/skin1.png" class="w-100" alt="">
+                        <div class="B-inC px-3 pt-2 pb-1">
+                            <h4>Seven ways in which Dermal <br> fillers can help you</h4>
+                            <p>In the ever-evolving world of cosmetic enhancements, dermal fillers have emerged as a
+                                beacon of hope for individuals seeking to revitalize their appearance without the
+                                need....</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
