@@ -45,7 +45,8 @@
             color: #B77716;
             font-family: "theseasons", sans-serif;
         }
-        .B-card p{
+
+        .B-card p {
             color: #fff;
         }
     </style>
@@ -116,20 +117,20 @@
                     <div class="my-5" style="height: 2px; background-color: #B77716;"></div>
                     <div class="col-md-12">
                         <div class="row justify-content-center">
-                            <div class="col-md-1"><i class="fa-brands fs-4 fa-instagram" style="color: #BE975C;"></i>
+                            <div class="col-md-1 col-1"><i class="fa-brands fs-4 fa-instagram" style="color: #BE975C;"></i>
                             </div>
-                            <div class="col-md-1"><i class="fa-brands fs-4 fa-linkedin" style="color: #BE975C;"></i>
+                            <div class="col-md-1 col-1"><i class="fa-brands fs-4 fa-linkedin" style="color: #BE975C;"></i>
                             </div>
-                            <div class="col-md-1"><i class="fa-brands fs-4 fa-facebook" style="color: #BE975C;"></i>
+                            <div class="col-md-1 col-1"><i class="fa-brands fs-4 fa-facebook" style="color: #BE975C;"></i>
                             </div>
-                            <div class="col-md-1"><i class="fa-brands fs-4 fa-whatsapp" style="color: #BE975C;"></i>
+                            <div class="col-md-1 col-1"><i class="fa-brands fs-4 fa-whatsapp" style="color: #BE975C;"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <h2 class="my-5">SIMILAR POSTS</h2>
-                    <div class="swiper-container">
+                    <div class="swiper-container" style="overflow-x: hidden;">
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
@@ -268,7 +269,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        // Initialize Swiper
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
             spaceBetween: 30,
@@ -277,6 +277,27 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            breakpoints: {
+                // when window width is <= 576px
+                0: {
+                    slidesPerView: 1,
+                    spaceBetweenSlides: 10
+                },
+                576: {
+                    slidesPerView: 1,
+                    spaceBetweenSlides: 10
+                },
+                // when window width is <= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetweenSlides: 20
+                },
+                // when window width is <= 992px
+                992: {
+                    slidesPerView: 3,
+                    spaceBetweenSlides: 30
+                }
+            }
         });
     </script>
 </body>

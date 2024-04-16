@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satya</title>
+    <link rel="stylesheet" href="satya.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        body {
+            background-color: #FFF7F1;
+        }
+
+        .banner h1 {
+            color: #BB8739;
+            font-family: "theseasons", sans-serif;
+            font-size: 64px;
+        }
+
+        .hair-cont h2 {
+            color: #6F4300;
+            font-family: "theseasons", sans-serif;
+            font-size: 40px;
+        }
+
+        p {
+            color: #593500;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .banner button,
+        .hair-cont button {
+            background-color: #BB8739;
+        }
+
+        .FAQ h2 {
+            color: #B77716;
+            font-size: 48px;
+            font-family: "theseasons", sans-serif;
+        }
+
+        .head-d {
+            border-radius: 47px / 10px;
+            border: 1px solid #BE975C;
+            width: fit-content;
+        }
+
+        .hair-cont ul li {
+            color: #6F4300;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .accordion-item {
+            margin: 2rem 0;
+        }
+
+        .accordion-item button {
+            color: #B77716;
+            font-family: "auto", sans-serif;
+            border: 2px solid #B77716;
+            border-radius: 20px;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #b77716;
+            background-color: #ffffff;
+        }
+
+        .accordion-body {
+            color: #b77716;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url(assets/imgs/icons/plus.png);
+        }
+
+        .accordion-button::after {
+            background-image: url(assets/imgs/icons/plus.png);
+        }
+
+        .accordion-button:focus {
+            border-color: #b77716;
+            box-shadow: none;
+        }
+
+        .hair-cont {
+            margin-left: 5rem;
+            padding-left: 5rem;
+        }
+
+        @media (max-width: 1250px) {
+            .hair-cont {
+                margin-left: 0rem;
+                padding-left: 0rem;
+            }
+            .banner h1{
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <header>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-4 col-md-4 d-flex justify-content-start align-items-center">
+                    <div class="msg mx-2"><img src="assets/imgs/icons/Group 10.png" alt=""></div>
+                    <div class="msg mx-2"><img src="assets/imgs/icons/phone.png" alt=""></div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="logo my-3"><img src="assets/imgs/Satya-Final-logo-new-3.png" width="90" alt=""></div>
+                </div>
+                <div class="col-4 col-md-4 d-flex justify-content-end align-items-center">
+                    <ul class="head-li justify-content-center w-100 d-flex list-unstyled">
+                        <li class="d-none d-md-block">Hair</li>
+                        <li class="d-none d-md-block">Skin</li>
+                        <li class="d-none d-md-block">Results</li>
+                        <div class="dropdown">
+                            <li><img src="assets/imgs/icons/Group 1.png" alt=""></li>
+                            <div class="dropdown-content">
+                                <a href="About.html">About</a>
+                                <a href="blog.html">Blog</a>
+                                <a href="contact.html">Contact</a>
+                                <a href="#">Concerns</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-start  flex-column h-100">
+                        <h1>FUT HAIR TRANSPLANT</h1>
+                        <p>About 80% of the male and 40% of the female population suffers from hair loss
+                            due to genetic, environmental, medical, or lifestyle factors at some point in time. Medical
+                            science has devised many techniques to grow the hair back on the head and restore the lost
+                            confidence in individuals who suffer from hair loss or balding. </p>
+                        <div style="height: 1px; background-color: #BB8739; width: 100%;" class="my-4"></div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-center ">
+                        <div class="p-4"><img src="assets/imgs/Group 165.png" class="w-100" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hair-cont" style="background-color: #E1B166;">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-start py-5 flex-column h-100">
+                        <h2 class="text-uppercase">What is Follicular Unit Transplant Technique ?</h2>
+                        <div style="height: 1px; background-color: #fff; width: 100%;" class="my-4"></div>
+                        <p>FUT is a hair transplant procedure in which we take out hair from the back of a
+                            patient’s scalp & put it in the bald areas. This ensures a very fine scar in most patients
+                            which is visible only if you completely shave off your head. The strip is dissected under
+                            the microscope by our team of trained technicians & these individual follicular units are
+                            implanted in the recipient area by creating slits, taking care of the angles & density of
+                            hair in that particular portion . FUT Hair transplant in Delhi surgeries take anywhere
+                            between 4-8 hours. </p>
+                        <button class="btn text-white rounded-pill text-uppercase my-4">Book a Consultation <img
+                                src="assets/imgs/icons/arrow.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <img src="assets/imgs/hair-follical.png" class="w-50" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hair-cont" style="background-color: #FFDAA1;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-start py-5 flex-column h-100">
+                        <h2 class="text-uppercase">Benefits of FUT Hair Transplant</h2>
+                        <div style="height: 1px; background-color: #fff; width: 100%;" class="my-4"></div>
+                        <ul>
+                            <li> It gives a natural look; this hair keeps growing & can be cut & styled like your own
+                                natural
+                                hair.
+                            </li>
+                            <li> FUT hair transplant gives us grafts from the safest donor zone, unlike FUE where we
+                                have to
+                                go to an unsafe donor zone for higher yield.
+                            </li>
+                            <li> Larger bald areas can be covered with a few sessions, as we get access to all the hair
+                                which
+                                are present in the strip, unlike FUE where we can just get one out of three.
+                            </li>
+                            <li> Low resection rate that yields better results, as the grafts are dissected under the
+                                microscope, unlike FUE which is a blind procedure.
+                            </li>
+                            <li> The FUT hair transplant procedure can be repeated twice or thrice depending upon the
+                                elasticity of the skin, which means we get access to almost all the hair which are
+                                present
+                                in the permanent donor zone, which is so useful in high-grade baldness cases.
+                            </li>
+                            <li> The same numbers can never be achieved through FUE alone as we create gaps & bald
+                                spaces in
+                                FUE, unlike FUT.
+                            </li>
+                            <li> FUT grafts have a higher survival rate as compared to FUE, as FUT grafts have better
+                                fat
+                                cushioning around them & are less prone to trauma & dehydration.
+                            </li>
+                            <li> FUT surgery can be performed without shaving off the donor & helps to minimize the
+                                social
+                                downtime.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <img src="assets/imgs/fillical.png" class="w-50" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hair-cont" style="background-color: #FFEBCC;">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-start py-5 flex-column h-100">
+                        <h2 class="text-uppercase">Who is an Ideal Candidate for the FUT Hair Transplant Procedure?</h2>
+                        <div style="height: 1px; background-color: #fff; width: 100%;" class="my-4"></div>
+                        <ul>
+                            <li> Men with androgenic alopecia are the best candidates for FUT hair transplant. A good
+                                candidate for FUT surgery is:
+                            </li>
+                            <li> More than 25 years as loss pattern is less predictable in younger people
+                            </li>
+                            <li> Men with the Norwood pattern or the M shape of hair loss tend to respond best to hair
+                                transplantation
+                            </li>
+                            <li> FUT can be used to treat (receding hairline) as well as high-grade baldness. Scarring
+                                alopecia because of injury, burns or skin diseases like lichen planus or pseudopelade
+                                can be
+                                treated with FUT.
+                            </li>
+                            <li> Beard restoration & eyebrow restoration can be other indications of FUT. FUT can be
+                                used to
+                                repair botched-up hair transplants (previous FUE or even FUT).
+                            </li>
+                            <li> Long hair transplant is another type of FUT, where the social downtime is further
+                                minimized
+                                & long hair is implanted in the recipient sites.
+                            </li>
+                        </ul>
+                        <button class="btn text-white rounded-pill mt-5">WATCH PROCESS<i
+                                class="fa-brands fa-youtube mx-3"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <img src="assets/imgs/ganja.png" class="w-50" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="FAQ bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="text-center mt-5">FREQUENTLY <br> ASKED QUESTIONS</h2>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div style="height: 2px; background-color: #BE975C; width: 286px;" class="my-3"></div>
+                </div>
+                <div class="row w-75">
+                    <div class="col-md-4 text-center"> <button class="btn px-4 py-3 rounded-pill fw-bold"
+                            style="background-color: #FFF1DB; color: #B77716;">PRE-TREATMENT</button>
+                    </div>
+                    <div class="col-md-4 text-center"> <button class="btn px-4 py-3 rounded-pill fw-bold"
+                            style="background-color: #FFF7F1; color: #B77716;">TREATMENT PROCESS</button>
+                    </div>
+                    <div class="col-md-4 text-center"> <button class="btn px-4 py-3 rounded-pill fw-bold"
+                            style="background-color: #FFF7F1; color: #B77716;">POST TREATMENT</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="accordion w-75" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header rounded-pill" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is the right age to get a 5D Skin Revival Facial treatment?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Open pores
+                                    Dull skin
+                                    Uneven skin tone
+                                    Pigmentation
+                                    Redness or increased sensitivity
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Which areas can be treated using 5D Skin Revival facial treatment?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Open pores
+                                    Dull skin
+                                    Uneven skin tone
+                                    Pigmentation
+                                    Redness or increased sensitivity
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What are the indications of the 5D Skin Revival Facial Treatment in Delhi?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Open pores
+                                    Dull skin
+                                    Uneven skin tone
+                                    Pigmentation
+                                    Redness or increased sensitivity
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row" style="height: 80vh;">
+                <div class="col-md-4 p-5 p-md-0 d-flex justify-content-center align-items-center flex-column"
+                    style="background-color: #3B2400;">
+                    <img src="assets/imgs/Group 162.png" alt="">
+                    <div class="mb-3 mt-5">
+                        <img src="assets/imgs/icons/foot/yt.png" alt="">
+                        <img src="assets/imgs/icons/foot/ig.png" alt="">
+                        <img src="assets/imgs/icons/foot/f.png" alt="">
+                        <img src="assets/imgs/icons/foot/wp.png" alt="">
+                        <img src="assets/imgs/icons/foot/x.png" alt="">
+                        <img src="assets/imgs/icons/foot/in.png" alt="">
+                        <img src="assets/imgs/icons/foot/pin.png" alt="">
+                    </div>
+                    <h5 style="color: #BE975C; border-bottom: 1px solid #BE975C;">info@satyaesthetics.com</h5>
+                </div>
+                <div class="col-md-4 p-5 text-center" style="background-color: #BB8739;">
+                    <h2 style="color: #FFDCA6; font-weight: 400;
+                letter-spacing: 6px;">GURUGRAM</h2>
+                    <p class="text-white fs-5">4301, DLF -4, <br> Galleria Boulevard, <br>
+                        Gurugram - 122002 <br>Ph.: +91 9717686464
+                    </p>
+                    <div class="text-white">______</div>
+                    <h2 style="color: #FFDCA6; font-weight: 400;
+                letter-spacing: 6px;" class="mt-3">DELHI</h2>
+                    <p class="text-white fs-5">ED 59A, Pitampura, <br> New Delhi - 110034 <br>
+                        Ph.: +91 7011752422
+                    </p>
+                </div>
+                <div class="col-md-4 p-5" style="background-color: #ffffff;">
+                    <div class="row text-center text-md-start">
+                        <div class="col-md-4">
+                            <ul>
+                                <li><span style="border-bottom: 1px solid #BE975C;">Hair</span></li>
+                                <li><span style="border-bottom: 1px solid #BE975C;">Skin</span></li>
+                                <li><span style="border-bottom: 1px solid #BE975C;">Results</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><span style="border-bottom: 1px solid #BE975C;">Blog</span></li>
+                                <li><span style="border-bottom: 1px solid #BE975C;">Concerns</span></li>
+                                <li><span style="border-bottom: 1px solid #BE975C;">Contact Us</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center align-items-center">
+                            <button
+                                class="btn text-white rounded-pill w-75 p-2 d-flex justify-content-around align-items-center"
+                                style="background-color: #BB8739;">BOOK APPOINTMENT <img
+                                    src="assets/imgs/icons/arrow.png" alt=""></button>
+                        </div>
+                        <div>
+                            <p class="text-uppercase p-4 fw-normal mt-5" style="color: #3B2400;">Copyright © 2022
+                                Satyaclinic.
+                                <br> All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>
