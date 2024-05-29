@@ -18,35 +18,8 @@
         integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <style>
-        .card {
-            position: relative;
-            overflow: hidden;
-            /* Ensure the image doesn't overflow the card */
-        }
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-        .card::after {
-            content: "";
-            background-image: url(assets/imgs/Rectangle\ 293.png);
-            background-size: cover;
-            background-position: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            /* Start with opacity 0 */
-            transition: opacity 0.3s ease;
-            /* Smooth transition */
-            z-index: 1;
-        }
-
-        .card:hover::after {
-            opacity: 0.5;
-            /* Adjust the opacity as needed */
-        }
-    </style>
 </head>
 
 <body style="overflow-x: hidden;">
@@ -58,7 +31,7 @@
                     <div class="msg mx-2"><img src="assets/imgs/icons/phone.png" alt=""></div>
                 </div>
                 <div class="col-4 col-md-4">
-                    <div class="logo my-3"><img src="assets/imgs/Satya-Final-logo-new-3.png" width="90" alt=""></div>
+                    <div class="logo my-3"><a href="index.html"><img src="assets/imgs/Satya-Final-logo-new-3.png" width="90" alt=""></a></div>
                 </div>
                 <div class="col-4 col-md-4 d-flex justify-content-end align-items-center">
                     <ul class="head-li justify-content-center w-100 d-flex list-unstyled">
@@ -121,28 +94,54 @@
                         style="border: 2.5px solid #BE975C;">KNOW MORE <img src="assets/imgs/icons/arrow.png"
                             alt=""></button>
                 </div>
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <img src="assets/imgs/icons/Black.png" class="pt-5" width="114" alt="">
-                        <h3 class="my-3">ANTI AGING</h3>
-                        <p class="m-0">Satya’s advanced anti-aging
-                            solutions have been designed to rejuvenate your skin and restore its natural
-                            beauty.
-                            Let us help you turn back the clock on ageing. .</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <img src="assets/imgs/icons/Group 14.png" class="pt-5" width="86" alt="">
-                        <h3 class="my-3">MEDI FACIAL</h3>
-                        <p class="m-0">Satya Aesthetics' luxurious
-                            medi-facials are designed to rejuvenate, enrich, and brighten your skin.
-                        </p>
+                <div class="col-md-8 swiper-container" style="overflow: hidden;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="skin-c1">
+                            <div class="card p-4">
+                                <div class="card-background"></div>
+                                <img src="assets/imgs/icons/Black.png" class="pt-5 card-image" width="114" alt="">
+                                <h3 class="my-3 card-title">ANTI AGING</h3>
+                                <p class="m-0 card-description">Satya’s advanced anti-aging
+                                    solutions have been designed to rejuvenate your skin and restore its natural
+                                    beauty. Let us help you turn back the clock on ageing.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="skin-c2">
+                            <div class="card p-4">
+                                <div class="card-background"></div>
+                                <img src="assets/imgs/icons/Group 14.png" class="pt-5" width="86" alt="">
+                                <h3 class="my-3">MEDI FACIAL</h3>
+                                <p class="m-0">Satya Aesthetics' luxurious
+                                    medi-facials are designed to rejuvenate, enrich, and brighten your skin.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="skin-c3">
+                            <div class="card p-4">
+                                <div class="card-background"></div>
+                                <img src="assets/imgs/icons/Group 14.png" class="pt-5" width="86" alt="">
+                                <h3 class="my-3">MEDI FACIAL</h3>
+                                <p class="m-0">Satya Aesthetics' luxurious
+                                    medi-facials are designed to rejuvenate, enrich, and brighten your skin.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="skin-c4">
+                            <div class="card p-4">
+                                <div class="card-background"></div>
+                                <img src="assets/imgs/icons/Group 14.png" class="pt-5" width="86" alt="">
+                                <h3 class="my-3">MEDI FACIAL</h3>
+                                <p class="m-0">Satya Aesthetics' luxurious
+                                    medi-facials are designed to rejuvenate, enrich, and brighten your skin.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+
             </div>
-            <div class="row py-5" style="border-bottom: 1px solid #BE975C;">
+            <div class="row py-5 flex-row-reverse" style="border-bottom: 1px solid #BE975C;">
                 <div class="col-md-4 d-flex justify-content-center align-items-center flex-column">
                     <img src="assets/imgs/icons/Group 20.png" alt="" style="width: 102px; height: 96px;">
                     <div style="height: 2px; background-color: #BE975C; width: 100%; margin: -2px;"></div>
@@ -152,23 +151,51 @@
                         style="border: 2.5px solid #BE975C;">KNOW MORE <img src="assets/imgs/icons/arrow.png"
                             alt=""></button>
                 </div>
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <img src="assets/imgs/icons/Black2.png" class="pt-5" width="114" alt="">
-                        <h3 class="my-3">HAIR TRANSPLANT</h3>
-                        <p class="m-0">Satya specializes in
-                            offering
-                            every type of natural hair transplant, including FUE, FUT, and MHT. </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <img src="assets/imgs/icons/Black3.png" class="pt-5" width="86" alt="">
-                        <h3 class="my-3">HAIR LOSS TREATMENT</h3>
-                        <p class="m-0">Satya specializes in
-                            offering
-                            every type of natural hair transplant, including FUE, FUT, and MHT.
-                        </p>
+                <div class="col-md-8 swiper-container" style="overflow: hidden;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="hair-c1">
+                            <div class="card p-4">
+                                <div class="card-background"></div>
+                                <img src="assets/imgs/icons/Black2.png" class="pt-5" width="114" alt="">
+                                <h3 class="my-3">HAIR TRANSPLANT</h3>
+                                <p class="m-0">Satya specializes in
+                                    offering
+                                    every type of natural hair transplant, including FUE, FUT, and MHT. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="hair-c2">
+                            <div class="card p-4">
+                                <div class="card-background"></div>
+                                <img src="assets/imgs/icons/Black3.png" class="pt-5" width="86" alt="">
+                                <h3 class="my-3">HAIR LOSS TREATMENT</h3>
+                                <p class="m-0">Satya specializes in
+                                    offering
+                                    every type of natural hair transplant, including FUE, FUT, and MHT.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="hair-c3">
+                            <div class="card p-4">
+                                <div class="card-background"></div>
+                                <img src="assets/imgs/icons/Black3.png" class="pt-5" width="86" alt="">
+                                <h3 class="my-3">HAIR LOSS TREATMENT</h3>
+                                <p class="m-0">Satya specializes in
+                                    offering
+                                    every type of natural hair transplant, including FUE, FUT, and MHT.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="hair-c4">
+                            <div class="card p-4">
+                                <div class="card-background"></div>
+                                <img src="assets/imgs/icons/Black3.png" class="pt-5" width="86" alt="">
+                                <h3 class="my-3">HAIR LOSS TREATMENT</h3>
+                                <p class="m-0">Satya specializes in
+                                    offering
+                                    every type of natural hair transplant, including FUE, FUT, and MHT.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -561,6 +588,40 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+        });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 1,
+            loop: true,
+            autoplay: {
+                delay: 2500, // Delay between transitions (in milliseconds)
+                disableOnInteraction: false, // Continue autoplay after user interactions
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+            }
         });
     </script>
 

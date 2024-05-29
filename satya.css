@@ -261,3 +261,86 @@ button img:hover {
     border-bottom: 1px solid #6f4300;
   }
 }
+
+/* cardsservices */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  transition: transform 0.5s;
+}
+
+#skin-c3 .card-background{
+  background-image: url("https://essentialskinclinic.com.au/wp-content/uploads/2020/10/Facial-square.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#skin-c2 .card-background{
+  background-image: url("https://static7.depositphotos.com/1062035/709/i/450/depositphotos_7095662-stock-photo-beauty-treatment.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#skin-c1 .card-background{
+  background-image: url("https://images.pexels.com/photos/6811386/pexels-photo-6811386.jpeg?cs=srgb&dl=pexels-yaroslav-shuraev-6811386.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+}
+#skin-c4 .card-background{
+  background-image: url("https://fortune.com/img-assets/wp-content/uploads/2015/07/l-raphael-singature-oxy-treatment-at-the-four-seasons-hotel-new-york20-copy.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#hair-c1 .card-background{
+  background-image: url("https://www.jeanlouisdavid.us/app/uploads/sites/5/2023/03/17584-greasy-hair-treatments-article_media_block-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#hair-c2 .card-background{
+  background-image: url("https://www.medhairclinic.com/de/wp-content/uploads/2021/06/mesotherapy.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#hair-c3 .card-background{
+  background-image: url("https://s3-media0.fl.yelpcdn.com/bphoto/m3ZJuHj44zaZrpLo5Fpdpg/1000s.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#hair-c4 .card-background{
+  background-image: url("https://media.istockphoto.com/id/598545458/photo/cropped-image-of-man-suffering-from-hair-loss.jpg?s=612x612&w=0&k=20&c=mbXMo3AKi9l7_PNNY2g45t8O3hvzsSpOQ84-Ea0yOAw=");
+  background-size: cover;
+  background-position: center;
+}
+
+.card img,
+.card h3,
+.card p {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.card:hover .card-background {
+  filter: brightness(0.5);
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.card:hover img,
+.card:hover h3,
+.card:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
