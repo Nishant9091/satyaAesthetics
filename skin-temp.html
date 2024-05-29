@@ -69,13 +69,23 @@
         .accordion-item button {
             color: #B77716;
             font-family: "auto", sans-serif;
-            border: 2px solid #B77716;
             border-radius: 20px;
+            outline: none!important;
+        }
+        .accordion-button {
+            background-color: #ffffff00;
         }
 
+        .accordion-button:not(.collapsed)::after {
+            background-image: url(assets/imgs/icons/plus.png);
+        }
+
+        .accordion-button::after {
+            background-image: url(assets/imgs/icons/plus.png);
+        }
         .accordion-button:not(.collapsed) {
             color: #b77716;
-            background-color: #ffffff;
+            background-color: #ffffff00;
         }
 
         .accordion-body {
