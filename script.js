@@ -137,3 +137,56 @@ videoFrames.forEach(function (frame) {
         swiper.autoplay.start();
     });
 });
+
+
+// h1
+document.addEventListener("DOMContentLoaded", function() {
+    const heading = document.getElementById('animated-heading');
+    const text = heading.textContent;
+    heading.innerHTML = ''; // Clear the original text
+
+    function animateText() {
+        // Wrap each letter in a span
+        for (let i = 0; i < text.length; i++) {
+            const span = document.createElement('span');
+            span.className = 'letter';
+            span.textContent = text[i];
+            span.style.animationDelay = `${i * 0.1}s`;
+            heading.appendChild(span);
+        }
+        setTimeout(function() {
+            heading.innerHTML = ''; // Clear the animated text
+            animateText(); // Restart the animation after delay
+        }, 5000); // 3000ms = 3 seconds
+    }
+
+    animateText(); // Start the animation initially
+});
+
+
+
+// button
+
+const text = document.querySelector(".text");
+text.innerHTML = text.innerText
+	.split("")
+	.map(
+		(char, i) => `<span style="transform:rotate(${i * 10.3}deg)">${char}</span>`
+	)
+	.join("");
+
+
+
+// JavaScript is optional if you want to control video playback via script
+
+// Get the video element
+const video = document.getElementById('video');
+
+// Play the video on page load
+video.play();
+
+// Loop the video
+video.addEventListener('ended', () => {
+    video.currentTime = 0;
+    video.play();
+});

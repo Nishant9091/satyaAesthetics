@@ -27,16 +27,16 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-4 col-md-4 d-flex justify-content-start align-items-center">
-                    <div class="msg mx-2"><a href="#"><img src="assets/imgs/icons/Group 10.png" alt=""></a></div>
-                    <div class="msg mx-2"><a href="tel:9910094945"><img src="assets/imgs/icons/phone.png" alt=""></a>
+                    <div class="msg mx-2 d-none d-md-block"><a href="#"><img src="assets/imgs/icons/Group 10.png" alt=""></a></div>
+                    <div class="call mx-2"><a href="tel:9910094945"><img src="assets/imgs/icons/phone.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-4 col-md-4">
                     <div class="logo my-3"><a href="index.html"><img src="assets/imgs/Satya-Final-logo-new-3.png"
                                 width="90" alt=""></a></div>
                 </div>
-                <div class="col-4 col-md-4 d-flex justify-content-end align-items-center">
-                    <ul class="head-li justify-content-center w-100 d-flex list-unstyled">
+                <div class="col-4 col-md-4 d-flex justify-content-center align-items-center">
+                    <ul class="head-li justify-content-end w-100 d-flex list-unstyled mt-4">
                         <li class="d-none d-md-block"><a class="text-decoration-none" style="color: #BB8739;"
                                 href="hair-temp.html">Hair</a></li>
                         <li class="d-none d-md-block"><a class="text-decoration-none" style="color: #BB8739;"
@@ -61,21 +61,35 @@
 
     <section class=" main-cont">
         <div class="container">
-            <div class="row py-0 py-md-5">
+            <div class="row">
                 <div class="col-md-6 text-md-start text-center my-5">
-                    <h1><img src="assets/imgs/Where Science meets art..png" class="d-none d-md-block mt-5" alt=""></h1>
-                    <h1><img src="assets/imgs/Where Science meets art. (1).png" class="d-block d-md-none mt-5" alt="">
-                    </h1>
-                    <h2 class="my-5"><img src="assets/imgs/Worlds leading aesthetic and hair restoration centre.png"
-                            class="d-none d-md-block" alt=""></h2>
-                    <h2 class="my-5 text-center"><img
-                            src="assets/imgs/World-s leading aesthetic and hair restoration centre.png"
-                            class="d-block d-md-none w-100 px-5" alt=""></h2>
-                    <img src="assets/imgs/Group 9.png" alt="">
+                    <h1 class="w-100 main-h1" id="animated-heading">WHERE &nbsp; SCIENCE &nbsp; MEETS ART</h1>
+                    <br>
+                    <h2 class="fs-4" style="color: #3B2400;">World's leading aesthetic <br> and hair restoration centre
+                    </h2><br>
+                    <!--  <img src="assets/imgs/Group 9.png" alt=""> -->
+                    <div class="amin-btn d-flex justify-content-center align-items-center justify-content-md-start">
+                        <div class="circle">
+                            <div class="pogo"></div>
+                            <div class="text">
+                                <p>
+                                     EXPLORE SERVICE&nbsp;‣&nbsp;EXPLORE SERVICE&nbsp;‣&nbsp; 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form col-md-6 d-flex justify-content-center align-items-center">
-                    <img src="assets/imgs/Group 165.png" alt="">
+                <div class="form-container col-md-6 d-flex justify-content-center align-items-center">
+                    <video id="video" src="assets/videos/satya.mp4" muted loop style="width: 400px; position: absolute;"></video>
+                    <div class="form-overlay">
+                        <!-- Your form content here -->
+                        <form>
+                            <img src="assets/imgs/Group 165.png" alt="">
+                            <!-- Form fields -->
+                        </form>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -96,13 +110,9 @@
                     <h3 class="fs-1 my-3 sepration">SKIN</h3>
                     <button
                         class="btn text-white rounded-pill w-75 py-3 d-flex justify-content-around align-items-center fs-4"
-                        style="border: 2.5px solid #BE975C;">
+                        style="background-color: #BE975C;">
                         KNOW MORE <img src="assets/imgs/icons/arrow.png" alt="">
                     </button>
-                    <video class="hover-video" muted>
-                        <source src="assets/videos/satya.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
                 </div>
 
                 <div class="col-md-8 swiper-container" style="overflow: hidden;">
@@ -159,12 +169,8 @@
                     <h3 class="fs-1 my-3 sepration">HAIR</h3>
                     <button
                         class="btn text-white rounded-pill w-75 py-3 d-flex justify-content-around align-items-center fs-4"
-                        style="border: 2.5px solid #BE975C;">KNOW MORE <img src="assets/imgs/icons/arrow.png"
+                        style="background-color: #BE975C;">KNOW MORE <img src="assets/imgs/icons/arrow.png"
                             alt=""></button>
-                    <video class="hover-video" muted>
-                        <source src="assets/videos/satya.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
                 </div>
                 <div class="col-md-8 swiper-container" style="overflow: hidden;">
                     <div class="swiper-wrapper">
@@ -234,13 +240,13 @@
             <div class="row">
                 <div class="col-md-6 founder-info p-0 bg-white"
                     style="overflow: hidden; border-bottom: 1px solid #BE975C; ">
-                    <img src="assets/imgs/Group 24.png" class="drs" alt="">
+                    <div style="overflow: hidden;"> <img src="assets/imgs/Group 24.png" class="drs" alt=""></div>
                     <div class="in-card p-2 p-md-5" style="background-color: #3B2400;">
                         <h3 class="fs-1 my-3" style="color: #FFDCA6;">DR. SHAIIL GUPTA</h3>
                         <h4 style="color: #FFF7F1;">MD, Dermatologist, <br>
                             Hair Transplant Surgeon</h4>
                         <button
-                            class="btn text-white rounded-pill w-75 w-md-50 py-3 my-5 d-flex justify-content-around align-items-center fs-4"
+                            class="btn text-white rounded-pill w-75 w-md-50 py-3 my-5 d-flex justify-content-around align-items-center fs-4 mx-auto  mx-md-0"
                             style="background-color: #BB8739;">KNOW MORE <img src="assets/imgs/icons/arrow.png"
                                 alt=""></button>
                     </div>
@@ -252,11 +258,11 @@
                         <h4>MD, Dermatologist, <br>
                             Hair Transplant Surgeon</h4>
                         <button
-                            class="btn text-white rounded-pill w-75 w-md-50 py-3 my-5 d-flex justify-content-around align-items-center fs-4"
+                            class="btn text-white rounded-pill w-75 w-md-50 py-3 my-5 d-flex justify-content-around align-items-center fs-4 mx-auto mx-md-0"
                             style="background-color: #BB8739;">KNOW MORE <img src="assets/imgs/icons/arrow.png"
                                 alt=""></button>
                     </div>
-                    <img src="assets/imgs/image 4.png" class="drs" alt="">
+                    <div style="overflow: hidden;"><img src="assets/imgs/image 4.png" class="drs" alt=""></div>
                 </div>
             </div>
         </div>
@@ -541,15 +547,21 @@
         <div class="swiper mySwiper py-5">
             <div class="swiper-wrapper mt-5">
                 <div class="swiper-slide d-flex justify-content-center align-items-center flex-column">
-                    <img style="width: 700px; height: 400px; object-fit: cover;" src="https://st4.depositphotos.com/13194036/21369/i/450/depositphotos_213690180-stock-photo-partial-view-cosmetologist-applying-clay.jpg" alt="">
+                    <img style="width: 700px; height: 400px; object-fit: cover;"
+                        src="https://st4.depositphotos.com/13194036/21369/i/450/depositphotos_213690180-stock-photo-partial-view-cosmetologist-applying-clay.jpg"
+                        alt="">
                     <h2 class="my-5">WORLD CLASS FACILITY</h2>
                 </div>
                 <div class="swiper-slide d-flex justify-content-center align-items-center flex-column">
-                    <img style="width: 700px; height: 400px; object-fit: cover;" src="https://media.post.rvohealth.io/wp-content/uploads/2020/08/Treatment_Options_for_Facial_Scars-732x549-thumbnail.jpg" alt="">
+                    <img style="width: 700px; height: 400px; object-fit: cover;"
+                        src="https://media.post.rvohealth.io/wp-content/uploads/2020/08/Treatment_Options_for_Facial_Scars-732x549-thumbnail.jpg"
+                        alt="">
                     <h2 class="my-5">WORLD CLASS FACILITY</h2>
                 </div>
                 <div class="swiper-slide d-flex justify-content-center align-items-center flex-column">
-                    <img style="width: 700px; height: 400px; object-fit: cover;" src="https://irp.cdn-website.com/52e22626/dms3rep/multi/laser-facial-treatment-in-scottsdale-af835d28.jpg" alt="">
+                    <img style="width: 700px; height: 400px; object-fit: cover;"
+                        src="https://irp.cdn-website.com/52e22626/dms3rep/multi/laser-facial-treatment-in-scottsdale-af835d28.jpg"
+                        alt="">
                     <h2 class="my-5">WORLD CLASS FACILITY</h2>
                 </div>
             </div>
@@ -631,7 +643,7 @@
                 </div>
                 <div class="col-md-4 p-5" style="background-color: #ffffff;">
                     <div class="row text-center text-md-start">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-6 text-start">
                             <ul>
                                 <li><span style="border-bottom: 1px solid #BE975C;"><a
                                             style="text-decoration: none;color: #BE975C;"
@@ -644,7 +656,7 @@
                                             href="gallery.html">Results</a></span></li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-6 text-start">
                             <ul>
                                 <li><span style="border-bottom: 1px solid #BE975C;"><a
                                             style="text-decoration: none;color: #BE975C;"
@@ -657,14 +669,14 @@
                                             Us</a></span></li>
                             </ul>
                         </div>
-                        <div class="col-md-12 d-flex justify-content-center align-items-center">
+                        <div class="col-md-12 d-flex justify-content-center align-items-center mt-2 mt-md-0">
                             <button
                                 class="btn text-white rounded-pill w-75 p-2 d-flex justify-content-around align-items-center mt-md-5"
                                 style="background-color: #BB8739;">BOOK APPOINTMENT <img
                                     src="assets/imgs/icons/arrow.png" alt=""></button>
                         </div>
                         <div>
-                            <p class="text-uppercase p-4 fw-normal mt-5" style="color: #3B2400;">Copyright © 2022
+                            <p class="text-uppercase p-4 fw-normal mt-0 mt-md-5" style="color: #3B2400;">Copyright © 2022
                                 Satyaclinic.
                                 <br> All rights reserved
                             </p>
