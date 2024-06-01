@@ -154,6 +154,7 @@ footer ul li {
   border-radius: 0 0 15px 15px;
   position: relative;
   top: -6rem;
+  transition: 0.3s ease-in-out;
 }
 
 .B-inC h4 {
@@ -192,14 +193,14 @@ footer ul li {
 .services button:hover {
   background-color: #be975c;
 }
-
+button img{
+  transition: 0.1s ease-in-out;
+}
 button:hover img {
   transform: rotate(-40deg);
-  transition: 0.2s ease-in-out;
 }
 .B-inC:hover {
-  background-color: #6f4300;
-  transition: 0.4s ease-in-out;
+  background-color: #885200;
 }
 
 /* Styling the dropdown */
@@ -535,4 +536,7 @@ button:hover img {
   display: none;
 }
 
-
+.swiper-pagination .swiper-pagination-bullet{
+  background-color: #ffffff00;
+  border: 1px solid #be975c;
+}
